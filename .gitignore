@@ -1,0 +1,27 @@
+# --- Python Environment & Caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+
+# --- Project Specific Data (Large CSV Files) ---
+# Prevents heavy backtesting data from being pushed to GitHub
+*.csv
+!gold_5m_full_table.csv.example
+
+# --- Output Charts & Reports ---
+# Prevents generated dashboard images from cluttering the repo
+*.png
+!assets/
+
+# --- IDEs and Editors ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
